@@ -1,0 +1,123 @@
+body {
+    font-family: 'Century Gothic';
+    background-color: #333;
+    color: #00986c;
+    width: 100%;
+    margin: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+
+            a {
+                display: block;
+                padding: 10px 20px;
+                color: #fff;
+                /* Color del texto del enlace */
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color: #026842;
+            }
+        }
+
+    }
+}
+
+
+
+header {
+    background-color: #00986c;
+    color: white;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10lvw;
+
+    h1,
+    h3,
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+        width: 50lvw;
+    }
+}
+
+
+
+
+main {
+    .titulo {
+        text-align: center;
+    }
+    .habilidades {
+        display: flex;
+        justify-content: center;
+        align-items: self-start;
+        flex-wrap: wrap;
+        gap: 10vw;
+
+        .lenguajes,
+        .otras-habilidades {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                flex: 1 0 auto;
+                justify-content: center;
+                align-items: center;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 200px;
+                    height: 100px;
+                    border: 1px solid #00986c;
+                    border-radius: 10px;
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+                    margin: 0 30px 30px 30px;
+                    padding: auto;
+
+                    img {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+
+                }
+            }
+
+        }
+    }
+
+
+}
